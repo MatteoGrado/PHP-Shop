@@ -1,0 +1,15 @@
+{
+    "name": "matteo.grado/php-shop",
+    "autoload": {
+        "psr-4": {
+            "App\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matteo Grado"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

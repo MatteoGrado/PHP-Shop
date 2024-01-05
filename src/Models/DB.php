@@ -4,10 +4,10 @@
 
     class DB {
         private $con;
+
         public function __construct($host, $user, $pwd, $dbName) {
             $this->connect($host, $user, $pwd, $dbName);
         }
-
         protected function connect($host, $user, $pwd, $dbName) {
             try {
                 $this->con = new \PDO("mysql:host=" . $host . ";dbname=" . $dbName, $user, $pwd);
@@ -15,5 +15,6 @@
             } catch (\PDOException $e) {
                 die("Failed to cennect to DB!");
             }
+            return $this->con;
         }
     }

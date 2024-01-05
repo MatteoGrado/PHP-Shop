@@ -8,10 +8,10 @@
         protected function login() {
             $db = new DB("localhost", "admin", "Sumafelo03!", "php_shop");
             if (isset($_POST['submit'])) {
+                $username = $_POST['username'];
+                $password = $_POST['password'];
 
-
-
-                $sql = "SELECT * FROM users";
+                $stmt = $this->con->prepare("SELECT * FROM users");
             }
         }
     }

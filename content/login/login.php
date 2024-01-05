@@ -31,9 +31,12 @@
         <div class="forgot-password">
             <a href="#">Passwort vergessen?</a>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" name='submit'>Login</button>
         <a class="register" href="../register/register.php">Noch kein Konto?</a>
    </form>
 </div>
 </body>
 </html>
+<?php
+
+    include '../../src/Controller/UserLoginController.php';

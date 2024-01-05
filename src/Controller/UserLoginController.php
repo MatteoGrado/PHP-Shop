@@ -1,0 +1,17 @@
+<?php
+
+    namespace App\src\Controller;
+
+    use App\src\Models\DB;
+
+    class UserLoginController {
+        protected function login() {
+            $db = new DB("localhost", "admin", "Sumafelo03!", "php_shop");
+            if (isset($_POST['submit'])) {
+
+
+
+                $sql = "SELECT * FROM users";
+            }
+        }
+    }

@@ -11,7 +11,7 @@
                 $username = $_POST['username'];
                 $password = $_POST['password'];
 
-                $stmt = $this->con->prepare("SELECT * FROM users");
+                $stmt = $db->con->prepare("SELECT * FROM users");
             }
         }
     }

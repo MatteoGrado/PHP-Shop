@@ -12,6 +12,11 @@
     ],
     "minimum-stability": "stable",
     "require": {
-      "ext-pdo": "*"
+      "ext-pdo": "*",
+        "router/slim": "^0.0.7"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     }
 }

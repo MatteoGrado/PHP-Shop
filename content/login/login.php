@@ -1,3 +1,14 @@
+<?php
+
+    use App\WebShop\src\Controller\LoginController;
+
+    include '../../src/Controller/LoginController.php';
+    $loginController = new LoginController();
+
+    if (isset($_POST['submit'])) {
+        $loginController->login();
+    }
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -37,6 +48,3 @@
 </div>
 </body>
 </html>
-<?php
-
-    include '../../src/Controller/UserLoginController.php';

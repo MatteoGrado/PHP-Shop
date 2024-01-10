@@ -1,6 +1,6 @@
 <?php
 
-    namespace App\WebShop\src\Models;
+    namespace App\src\Models;
 
     class DB {
         public $con;

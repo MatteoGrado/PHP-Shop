@@ -1,13 +1,11 @@
 <?php
 
-    use App\WebShop\src\Controller\LoginController;
+    use App\src\Controller\UserController;
+    use App\src\Models\DB;
 
-    include '../../src/Controller/LoginController.php';
-    $loginController = new LoginController();
-
-    if (isset($_POST['submit'])) {
-        $loginController->login();
-    }
+    include '../../src/Controller/UserController.php';
+    include '../../src/Models/DB.php';
+    $userController = new \App\src\Controller\UserController();
 ?>
 <!doctype html>
 <html lang="en">

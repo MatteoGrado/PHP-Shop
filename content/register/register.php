@@ -1,3 +1,16 @@
+<?php
+
+    use App\src\Controller\UserController;
+    use App\src\Models\DB;
+
+    include '../../src/Controller/UserController.php';
+    include '../../src/Models/DB.php';
+
+    $userController = new \App\src\Controller\UserController();
+    if (isset($_POST['submit'])) {
+        $userController->register();
+    }
+?>
 <!doctype html>
 <html lang="en">
 <head>

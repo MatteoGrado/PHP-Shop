@@ -6,6 +6,13 @@
     include '../../src/Controller/UserController.php';
     include '../../src/Models/DB.php';
     $userController = new \App\src\Controller\UserController();
+    if (isset($_POST['submit'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $userController->Controller();
+        $userController->login($username, $password);
+    }
 ?>
 <!doctype html>
 <html lang="en">

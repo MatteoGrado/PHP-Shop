@@ -5,10 +5,14 @@
 
     include '../../src/Controller/UserController.php';
     include '../../src/Models/DB.php';
-
     $userController = new \App\src\Controller\UserController();
     if (isset($_POST['submit'])) {
-        $userController->register();
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $userController->Controller();
+        $userController->register($username, $password);
+        $userController->register($username, $password);
     }
 ?>
 <!doctype html>

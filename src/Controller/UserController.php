@@ -8,6 +8,7 @@
         public function Controller() {
             $db = new DB("localhost", "Admin", "Sumafelo03!", "php_shop");
             if (isset($_POST['submit'])) {
+                session_start();
                 if ($this->login($_POST['username'], $_POST['password'])) {
                     //session set user_id for remember-me
                 } else {
